@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Я — студент ВШЭ</title>
+</head>
+<body>
+  <header>
+    <h1>Я — студент ВШЭ</h1>
+    <p>Учеба, проекты и студенческая жизнь в одном месте</p>
+  </header>
+
+  <nav aria-label="Основная навигация">
+    <ul>
+      <li><a href="index.html" aria-current="page">Главная</a></li>
+      <li><a href="feedback.html">Обратная связь</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section aria-labelledby="about-title">
+      <h2 id="about-title">Обо мне</h2>
+      <p>
+        я <strong>студент НИУ ВШЭ</strong>.
+        я учусь на направлении <em>«Прикладная математика»</em>
+        и изучаю предмет веб-программирование
+      </p>
+      <p>
+        я изучаю <abbr title="HyperText Markup Language">HTML</abbr>,
+        <abbr title="Cascading Style Sheets">CSS</abbr>
+      </p>
+    </section>
+
+    <section aria-labelledby="day-title">
+      <h2 id="day-title">Мой учебный день</h2>
+      <article>
+        <h3>Расписание</h3>
+        <ol>
+          <li><time datetime="08:30">08:30</time> — лекция по веб-программирование</li>
+          <li><time datetime="11:10">11:10</time> — семинар по веб-программирование</li>
+          <li><time datetime="14:40">14:40</time> — работа над дз по веб-программирование</li>
+        </ol>
+      </article>
+      <article>
+        <h3>Внеучебная активность</h3>
+        <ul>
+          <li>волонтерство </li>
+          <li>мероприятия</li>
+        </ul>
+      </article>
+    </section>
+
+    <section aria-labelledby="gallery-title">
+      <h2 id="gallery-title">Графическая информация</h2>
+      <figure>
+        <img src="images/images.jpeg" alt="центр сервиса Студент">
+        <figcaption>Учеба в кампусе ВШЭ: аудитории, проекты и новые знания.</figcaption>
+      </figure>
+    </section>
+
+    <aside>
+      <h2>Полезные ссылки</h2>
+      <p>
+        Подробнее о студенческой жизни можно узнать на
+        <a href="https://www.hse.ru" target="_blank" rel="noopener noreferrer">официальном сайте ВШЭ</a>.
+      </p>
+    </aside>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Я — студент ВШЭ</p>
+    <address>Москва, НИУ ВШЭ</address>
+  </footer>
+</body>
+</html>
