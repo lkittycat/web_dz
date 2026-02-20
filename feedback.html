@@ -4,85 +4,88 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Обратная связь — Я студент ВШЭ</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>Обратная связь</h1>
-    <p>Расскажите о вашем опыте учебы в ВШЭ</p>
-  </header>
+  <div id="page-shell">
+    <header class="site-header">
+      <h1>Обратная связь</h1>
+      <p style="opacity: 0.95;">Расскажите о вашем опыте учебы в ВШЭ</p>
+    </header>
 
-  <nav aria-label="Основная навигация">
-    <ul>
-      <li><a href="index.html">Главная</a></li>
-      <li><a href="feedback.html" aria-current="page">Обратная связь</a></li>
-    </ul>
-  </nav>
+    <nav class="main-nav" aria-label="Основная навигация">
+      <ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="feedback.html" aria-current="page">Обратная связь</a></li>
+      </ul>
+    </nav>
 
-  <main>
-    <section aria-labelledby="form-title">
-      <h2 id="form-title">Форма обратной связи</h2>
-      <p>Поля, отмеченные символом <strong>*</strong>, обязательны к заполнению.</p>
+    <main>
+      <section class="panel content-block" aria-labelledby="form-title">
+        <h2 id="form-title">Форма обратной связи</h2>
+        <p class="notice">Поля, отмеченные символом <strong>*</strong>, обязательны к заполнению.</p>
 
-      <form action="#" method="post">
-        <fieldset>
-          <legend>Личные данные</legend>
+        <form action="#" method="post" class="form-grid">
+          <fieldset>
+            <legend>Личные данные</legend>
 
-          <label for="name">ФИО *</label>
-          <input type="text" id="name" name="name" placeholder="Иванов Иван Иванович" required>
+            <label for="name">ФИО *</label>
+            <input type="text" id="name" name="name" placeholder="Иванов Иван Иванович" required>
 
-          <label for="email">Email *</label>
-          <input type="email" id="email" name="email" placeholder="student@edu.hse.ru" required>
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" placeholder="student@edu.hse.ru" required>
 
-          <label for="group">Учебная группа</label>
-          <input type="text" id="group" name="group" placeholder="БПИ231">
+            <label for="group">Учебная группа</label>
+            <input type="text" id="group" name="group" placeholder="БПИ231">
 
-          <label for="course">Курс</label>
-          <select id="course" name="course">
-            <option value="">Выберите курс</option>
-            <option value="1">1 курс</option>
-            <option value="2">2 курс</option>
-            <option value="3">3 курс</option>
-            <option value="4">4 курс</option>
-          </select>
-        </fieldset>
+            <label for="course">Курс</label>
+            <select id="course" name="course">
+              <option value="">Выберите курс</option>
+              <option value="1">1 курс</option>
+              <option value="2">2 курс</option>
+              <option value="3">3 курс</option>
+              <option value="4">4 курс</option>
+            </select>
+          </fieldset>
 
-        <fieldset>
-          <legend>Оценка обучения</legend>
+          <fieldset>
+            <legend>Оценка обучения</legend>
 
-          <p>Как вы оцениваете качество обучения?</p>
-          <label><input type="radio" name="quality" value="excellent"> Отлично</label>
-          <label><input type="radio" name="quality" value="good"> Хорошо</label>
-          <label><input type="radio" name="quality" value="satisfactory"> Удовлетворительно</label>
+            <p>Как вы оцениваете качество обучения?</p>
+            <label><input type="radio" name="quality" value="excellent"> Отлично</label>
+            <label><input type="radio" name="quality" value="good"> Хорошо</label>
+            <label><input type="radio" name="quality" value="satisfactory"> Удовлетворительно</label>
 
-          <p>Что вам нравится в студенческой жизни?</p>
-          <label><input type="checkbox" name="activity" value="lectures"> Лекции и семинары</label>
-          <label><input type="checkbox" name="activity" value="projects"> Проектная работа</label>
-          <label><input type="checkbox" name="activity" value="clubs"> Клубы и мероприятия</label>
+            <p>Что вам нравится в студенческой жизни?</p>
+            <label><input type="checkbox" name="activity" value="lectures"> Лекции и семинары</label>
+            <label><input type="checkbox" name="activity" value="projects"> Проектная работа</label>
+            <label><input type="checkbox" name="activity" value="clubs"> Клубы и мероприятия</label>
 
-          <label for="study-hours">Сколько часов в неделю уходит на учебу?</label>
-          <input type="range" id="study-hours" name="study_hours" min="0" max="60" step="5" value="30">
+            <label for="study-hours">Сколько часов в неделю уходит на учебу?</label>
+            <input type="range" id="study-hours" name="study_hours" min="0" max="60" step="5" value="30">
 
-          <label for="start-date">Дата начала обучения</label>
-          <input type="date" id="start-date" name="start_date">
-        </fieldset>
+            <label for="start-date">Дата начала обучения</label>
+            <input type="date" id="start-date" name="start_date">
+          </fieldset>
 
-        <fieldset>
-          <legend>Комментарий</legend>
-          <label for="message">Ваше сообщение</label>
-          <textarea id="message" name="message" rows="6" placeholder="Поделитесь своими впечатлениями..."></textarea>
-        </fieldset>
+          <fieldset>
+            <legend>Комментарий</legend>
+            <label for="message">Ваше сообщение</label>
+            <textarea id="message" name="message" rows="6" placeholder="Поделитесь своими впечатлениями..."></textarea>
+          </fieldset>
 
-        <p>
-          <button type="submit">Отправить</button>
-          <button type="reset">Очистить форму</button>
-        </p>
-      </form>
-    </section>
-  </main>
+          <p style="display: flex; gap: 10px; margin: 0;">
+            <button type="submit">Отправить</button>
+            <button type="reset">Очистить форму</button>
+          </p>
+        </form>
+      </section>
+    </main>
 
-  <footer>
-    <p>&copy; 2026 Я — студент ВШЭ</p>
-    <p><a href="index.html">Вернуться на главную страницу</a></p>
-  </footer>
+    <footer class="site-footer">
+      <p>&copy; 2026 Я — студент ВШЭ</p>
+      <p><a href="index.html">Вернуться на главную страницу</a></p>
+    </footer>
+  </div>
 </body>
 </html>
